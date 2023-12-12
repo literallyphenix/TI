@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity counter is 
+
+
+
+	port (
+		reset_n     : in std_logic; -- Key 3
+      clk         : in std_logic; --50 MHz
+		switches		: in std_logic_vector(7 downto 0); -- zur Übernahme des ofl-values
+		cnt_enable	: in std_logic; -- SW9
+		ofl_rd		: in std_logic; -- read and store ofl-value, KEY0
+		cnt_rd		: in std_logic; -- read and store the actual count-value, KEY1
+		cnt_val_act : out std_logic_vector(7 downto 0); -- aktueller Zählwert
+		cnt_val_stored_out : out std_logic_vector(7 downto 0) -- gespeicherter Zählwert
+		
+		
+		);
+end entity counter;
+
+architecture arch of counter is
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end architecture arch;
+	
+	
+	
+	
+	
+	
+	
+	
